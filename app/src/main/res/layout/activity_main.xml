@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hhh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="728dp"
+        android:layout_marginStart="1dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt_label_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:text="@string/nwd_nww"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_numA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Liczba a"
+                android:inputType="number"
+                android:textSize="24sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_numB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Liczba b"
+                android:inputType="number"
+                android:textSize="24sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txt_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wynik: "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_nwd"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:text="NWD" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_nww"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:text="NWW" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
